@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274068301ED8148A00B80ABC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2740682F1ED8148A00B80ABC /* main.m */; };
+		274068331ED8148A00B80ABC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068321ED8148A00B80ABC /* AppDelegate.m */; };
+		274068361ED8148A00B80ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068351ED8148A00B80ABC /* ViewController.m */; };
+		274068391ED8148A00B80ABC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 274068371ED8148A00B80ABC /* Main.storyboard */; };
+		2740683B1ED8148B00B80ABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2740683A1ED8148B00B80ABC /* Assets.xcassets */; };
+		2740683E1ED8148B00B80ABC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2740683C1ED8148B00B80ABC /* LaunchScreen.storyboard */; };
+		274068491ED8148B00B80ABC /* OCJSBridgeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068481ED8148B00B80ABC /* OCJSBridgeDemoTests.m */; };
+		274068541ED8148B00B80ABC /* OCJSBridgeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068531ED8148B00B80ABC /* OCJSBridgeDemoUITests.m */; };
+		2740686A1ED8156700B80ABC /* ExampleApp.html in Resources */ = {isa = PBXBuildFile; fileRef = 274068611ED8156700B80ABC /* ExampleApp.html */; };
+		2740686B1ED8156700B80ABC /* WebViewJavascriptBridge_JS.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068631ED8156700B80ABC /* WebViewJavascriptBridge_JS.m */; };
+		2740686C1ED8156700B80ABC /* WebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068651ED8156700B80ABC /* WebViewJavascriptBridge.m */; };
+		2740686D1ED8156700B80ABC /* WebViewJavascriptBridgeBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068671ED8156700B80ABC /* WebViewJavascriptBridgeBase.m */; };
+		2740686E1ED8156700B80ABC /* WKWebViewJavascriptBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 274068691ED8156700B80ABC /* WKWebViewJavascriptBridge.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		274068451ED8148B00B80ABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274068231ED8148A00B80ABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2740682A1ED8148A00B80ABC;
+			remoteInfo = OCJSBridgeDemo;
+		};
+		274068501ED8148B00B80ABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 274068231ED8148A00B80ABC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2740682A1ED8148A00B80ABC;
+			remoteInfo = OCJSBridgeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2740682B1ED8148A00B80ABC /* OCJSBridgeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCJSBridgeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2740682F1ED8148A00B80ABC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		274068311ED8148A00B80ABC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		274068321ED8148A00B80ABC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		274068341ED8148A00B80ABC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		274068351ED8148A00B80ABC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		274068381ED8148A00B80ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2740683A1ED8148B00B80ABC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2740683D1ED8148B00B80ABC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2740683F1ED8148B00B80ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274068441ED8148B00B80ABC /* OCJSBridgeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCJSBridgeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274068481ED8148B00B80ABC /* OCJSBridgeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCJSBridgeDemoTests.m; sourceTree = "<group>"; };
+		2740684A1ED8148B00B80ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2740684F1ED8148B00B80ABC /* OCJSBridgeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCJSBridgeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		274068531ED8148B00B80ABC /* OCJSBridgeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCJSBridgeDemoUITests.m; sourceTree = "<group>"; };
+		274068551ED8148B00B80ABC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		274068611ED8156700B80ABC /* ExampleApp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ExampleApp.html; sourceTree = "<group>"; };
+		274068621ED8156700B80ABC /* WebViewJavascriptBridge_JS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge_JS.h; sourceTree = "<group>"; };
+		274068631ED8156700B80ABC /* WebViewJavascriptBridge_JS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge_JS.m; sourceTree = "<group>"; };
+		274068641ED8156700B80ABC /* WebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		274068651ED8156700B80ABC /* WebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridge.m; sourceTree = "<group>"; };
+		274068661ED8156700B80ABC /* WebViewJavascriptBridgeBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeBase.h; sourceTree = "<group>"; };
+		274068671ED8156700B80ABC /* WebViewJavascriptBridgeBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeBase.m; sourceTree = "<group>"; };
+		274068681ED8156700B80ABC /* WKWebViewJavascriptBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewJavascriptBridge.h; sourceTree = "<group>"; };
+		274068691ED8156700B80ABC /* WKWebViewJavascriptBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewJavascriptBridge.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		274068281ED8148A00B80ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274068411ED8148B00B80ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2740684C1ED8148B00B80ABC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		274068221ED8148A00B80ABC = {
+			isa = PBXGroup;
+			children = (
+				2740682D1ED8148A00B80ABC /* OCJSBridgeDemo */,
+				274068471ED8148B00B80ABC /* OCJSBridgeDemoTests */,
+				274068521ED8148B00B80ABC /* OCJSBridgeDemoUITests */,
+				2740682C1ED8148A00B80ABC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2740682C1ED8148A00B80ABC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2740682B1ED8148A00B80ABC /* OCJSBridgeDemo.app */,
+				274068441ED8148B00B80ABC /* OCJSBridgeDemoTests.xctest */,
+				2740684F1ED8148B00B80ABC /* OCJSBridgeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2740682D1ED8148A00B80ABC /* OCJSBridgeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				274068611ED8156700B80ABC /* ExampleApp.html */,
+				274068621ED8156700B80ABC /* WebViewJavascriptBridge_JS.h */,
+				274068631ED8156700B80ABC /* WebViewJavascriptBridge_JS.m */,
+				274068641ED8156700B80ABC /* WebViewJavascriptBridge.h */,
+				274068651ED8156700B80ABC /* WebViewJavascriptBridge.m */,
+				274068661ED8156700B80ABC /* WebViewJavascriptBridgeBase.h */,
+				274068671ED8156700B80ABC /* WebViewJavascriptBridgeBase.m */,
+				274068681ED8156700B80ABC /* WKWebViewJavascriptBridge.h */,
+				274068691ED8156700B80ABC /* WKWebViewJavascriptBridge.m */,
+				274068311ED8148A00B80ABC /* AppDelegate.h */,
+				274068321ED8148A00B80ABC /* AppDelegate.m */,
+				274068341ED8148A00B80ABC /* ViewController.h */,
+				274068351ED8148A00B80ABC /* ViewController.m */,
+				274068371ED8148A00B80ABC /* Main.storyboard */,
+				2740683A1ED8148B00B80ABC /* Assets.xcassets */,
+				2740683C1ED8148B00B80ABC /* LaunchScreen.storyboard */,
+				2740683F1ED8148B00B80ABC /* Info.plist */,
+				2740682E1ED8148A00B80ABC /* Supporting Files */,
+			);
+			path = OCJSBridgeDemo;
+			sourceTree = "<group>";
+		};
+		2740682E1ED8148A00B80ABC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2740682F1ED8148A00B80ABC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		274068471ED8148B00B80ABC /* OCJSBridgeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				274068481ED8148B00B80ABC /* OCJSBridgeDemoTests.m */,
+				2740684A1ED8148B00B80ABC /* Info.plist */,
+			);
+			path = OCJSBridgeDemoTests;
+			sourceTree = "<group>";
+		};
+		274068521ED8148B00B80ABC /* OCJSBridgeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				274068531ED8148B00B80ABC /* OCJSBridgeDemoUITests.m */,
+				274068551ED8148B00B80ABC /* Info.plist */,
+			);
+			path = OCJSBridgeDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2740682A1ED8148A00B80ABC /* OCJSBridgeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 274068581ED8148B00B80ABC /* Build configuration list for PBXNativeTarget "OCJSBridgeDemo" */;
+			buildPhases = (
+				274068271ED8148A00B80ABC /* Sources */,
+				274068281ED8148A00B80ABC /* Frameworks */,
+				274068291ED8148A00B80ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCJSBridgeDemo;
+			productName = OCJSBridgeDemo;
+			productReference = 2740682B1ED8148A00B80ABC /* OCJSBridgeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		274068431ED8148B00B80ABC /* OCJSBridgeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2740685B1ED8148B00B80ABC /* Build configuration list for PBXNativeTarget "OCJSBridgeDemoTests" */;
+			buildPhases = (
+				274068401ED8148B00B80ABC /* Sources */,
+				274068411ED8148B00B80ABC /* Frameworks */,
+				274068421ED8148B00B80ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274068461ED8148B00B80ABC /* PBXTargetDependency */,
+			);
+			name = OCJSBridgeDemoTests;
+			productName = OCJSBridgeDemoTests;
+			productReference = 274068441ED8148B00B80ABC /* OCJSBridgeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2740684E1ED8148B00B80ABC /* OCJSBridgeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2740685E1ED8148B00B80ABC /* Build configuration list for PBXNativeTarget "OCJSBridgeDemoUITests" */;
+			buildPhases = (
+				2740684B1ED8148B00B80ABC /* Sources */,
+				2740684C1ED8148B00B80ABC /* Frameworks */,
+				2740684D1ED8148B00B80ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				274068511ED8148B00B80ABC /* PBXTargetDependency */,
+			);
+			name = OCJSBridgeDemoUITests;
+			productName = OCJSBridgeDemoUITests;
+			productReference = 2740684F1ED8148B00B80ABC /* OCJSBridgeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		274068231ED8148A00B80ABC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Mike;
+				TargetAttributes = {
+					2740682A1ED8148A00B80ABC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					274068431ED8148B00B80ABC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2740682A1ED8148A00B80ABC;
+					};
+					2740684E1ED8148B00B80ABC = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2740682A1ED8148A00B80ABC;
+					};
+				};
+			};
+			buildConfigurationList = 274068261ED8148A00B80ABC /* Build configuration list for PBXProject "OCJSBridgeDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 274068221ED8148A00B80ABC;
+			productRefGroup = 2740682C1ED8148A00B80ABC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2740682A1ED8148A00B80ABC /* OCJSBridgeDemo */,
+				274068431ED8148B00B80ABC /* OCJSBridgeDemoTests */,
+				2740684E1ED8148B00B80ABC /* OCJSBridgeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		274068291ED8148A00B80ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2740683E1ED8148B00B80ABC /* LaunchScreen.storyboard in Resources */,
+				2740683B1ED8148B00B80ABC /* Assets.xcassets in Resources */,
+				274068391ED8148A00B80ABC /* Main.storyboard in Resources */,
+				2740686A1ED8156700B80ABC /* ExampleApp.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274068421ED8148B00B80ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2740684D1ED8148B00B80ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		274068271ED8148A00B80ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2740686B1ED8156700B80ABC /* WebViewJavascriptBridge_JS.m in Sources */,
+				274068361ED8148A00B80ABC /* ViewController.m in Sources */,
+				274068331ED8148A00B80ABC /* AppDelegate.m in Sources */,
+				274068301ED8148A00B80ABC /* main.m in Sources */,
+				2740686D1ED8156700B80ABC /* WebViewJavascriptBridgeBase.m in Sources */,
+				2740686C1ED8156700B80ABC /* WebViewJavascriptBridge.m in Sources */,
+				2740686E1ED8156700B80ABC /* WKWebViewJavascriptBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		274068401ED8148B00B80ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274068491ED8148B00B80ABC /* OCJSBridgeDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2740684B1ED8148B00B80ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				274068541ED8148B00B80ABC /* OCJSBridgeDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		274068461ED8148B00B80ABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2740682A1ED8148A00B80ABC /* OCJSBridgeDemo */;
+			targetProxy = 274068451ED8148B00B80ABC /* PBXContainerItemProxy */;
+		};
+		274068511ED8148B00B80ABC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2740682A1ED8148A00B80ABC /* OCJSBridgeDemo */;
+			targetProxy = 274068501ED8148B00B80ABC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		274068371ED8148A00B80ABC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				274068381ED8148A00B80ABC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2740683C1ED8148B00B80ABC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2740683D1ED8148B00B80ABC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		274068561ED8148B00B80ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		274068571ED8148B00B80ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		274068591ED8148B00B80ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OCJSBridgeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikeFighting.com.OCJSBridgeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2740685A1ED8148B00B80ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OCJSBridgeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikeFighting.com.OCJSBridgeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2740685C1ED8148B00B80ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OCJSBridgeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikeFighting.com.OCJSBridgeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCJSBridgeDemo.app/OCJSBridgeDemo";
+			};
+			name = Debug;
+		};
+		2740685D1ED8148B00B80ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OCJSBridgeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikeFighting.com.OCJSBridgeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OCJSBridgeDemo.app/OCJSBridgeDemo";
+			};
+			name = Release;
+		};
+		2740685F1ED8148B00B80ABC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OCJSBridgeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikeFighting.com.OCJSBridgeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OCJSBridgeDemo;
+			};
+			name = Debug;
+		};
+		274068601ED8148B00B80ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OCJSBridgeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mikeFighting.com.OCJSBridgeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OCJSBridgeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		274068261ED8148A00B80ABC /* Build configuration list for PBXProject "OCJSBridgeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274068561ED8148B00B80ABC /* Debug */,
+				274068571ED8148B00B80ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		274068581ED8148B00B80ABC /* Build configuration list for PBXNativeTarget "OCJSBridgeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				274068591ED8148B00B80ABC /* Debug */,
+				2740685A1ED8148B00B80ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2740685B1ED8148B00B80ABC /* Build configuration list for PBXNativeTarget "OCJSBridgeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2740685C1ED8148B00B80ABC /* Debug */,
+				2740685D1ED8148B00B80ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2740685E1ED8148B00B80ABC /* Build configuration list for PBXNativeTarget "OCJSBridgeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2740685F1ED8148B00B80ABC /* Debug */,
+				274068601ED8148B00B80ABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 274068231ED8148A00B80ABC /* Project object */;
+}
